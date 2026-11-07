@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <header>Signup</header>
+        <form action="/home/charles/WEB DEVELOPMENT/UserRegistrationProject/login.html">
+
+            <!-- First Name -->
+            <div class="input-field">
+                <input type="text" placeholder="First name" class="fname" />
+                <span class="error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter your first name</p>
+                </span>
+            </div>
+
+            <!-- Last Name -->
+            <div class="input-field">
+                <input type="text" placeholder="Last name" class="lname" />
+                <span class="error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter your last name</p>
+                </span>
+            </div>
+
+            <!-- Age -->
+            <div class="input-field">
+                <input type="number" placeholder="Age" class="age" />
+                <span class="error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter a valid age</p>
+                </span>
+            </div>
+
+            <!-- Gender Dropdown -->
+            <div class="input-field">
+                <select class="gender" title="Gender">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <span class="error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please select your gender</p>
+                </span>
+            </div>
+
+            <!-- Country -->
+            <div class="input-field">
+                <input type="text" placeholder="Country" class="country" />
+                <span class="error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter your country</p>
+                </span>
+            </div>
+
+            <!-- Email Field -->
+            <div class="input-field">
+                <input type="email" placeholder="Enter your email" class="email" />
+                <span class="error email-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter a valid email</p>
+                </span>
+            </div>
+
+
+            <!-- Password Field -->
+            <div class="input-field">
+                <input type="password" placeholder="Create password" class="password" />
+                <i class="bx bx-hide show-hide"></i>
+                <span class="error password-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">
+                        Please enter at least 8 characters with a number, symbol, small, and capital letter.
+                    </p>
+                </span>
+            </div>
+
+            <!-- Confirm Password Field -->
+            <div class="input-field">
+                <input type="password" placeholder="Confirm password" class="cPassword" />
+                <i class="bx bx-hide show-hide"></i>
+                <span class="error cPassword-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Passwords don't match</p>
+                </span>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="input-field button">
+                <input type="submit" value="Submit Now" />
+            </div>
+        </form>
+    </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

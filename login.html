@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <header>Login</header>
+        <form action="/home/charles/WEB DEVELOPMENT/UserRegistrationProject/welcome.html">
+            <!-- First Name -->
+            <div class="input-field">
+                <input type="text" placeholder="First name" class="fname" />
+                <span class="error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">First name does not match records</p>
+                </span>
+            </div>
+
+            <!-- Password Field -->
+            <div class="input-field">
+                <input type="password" placeholder="Enter password" class="password" />
+                <i class="bx bx-hide show-hide"></i>
+                <span class="error password-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">
+                        Incorrect Password!
+                    </p>
+                </span>
+            </div>
+
+            <!-- Login Button -->
+            <div class="input-field button">
+                <input type="submit" value="Login Now" />
+            </div>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
